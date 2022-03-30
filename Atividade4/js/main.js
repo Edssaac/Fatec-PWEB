@@ -14,11 +14,11 @@ window.onload = () =>
             </div>
     
             <div class="row">
-                <figure class="col-md-6">
+                <figure class="col-xs-12 col-md-6">
                     <img src="img/${dados[i].imagem}" alt="${dados[i].titulo}" class="img-fluid rounded">
                 </figure>
     
-                <p class="col-md-6">
+                <p class="col-xs-12 col-md-6">
                     ${dados[i].descricao}
                     <br><br>
                     <span>Disponível em: <a href="${dados[i].link}" target="_blank">${dados[i].titulo}</a></span>
