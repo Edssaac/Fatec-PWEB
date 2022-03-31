@@ -6,8 +6,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -34,6 +35,39 @@
         <article>
 
         </article>
+
+        <form id="form" class="ocultar">
+            <div class="form-group">
+                <label for="titulo">Título</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <textarea name="descricao" id="descricao" class="form-control" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="imagem">Imagem</label>
+                <input type="url" class="form-control" id="imagem" name="imagem" required placeholder="https://">
+            </div>
+            
+            <div class="form-group">
+                <label for="link">Link</label>
+                <input type="url" class="form-control" id="link" name="link" required placeholder="https://">
+            </div>
+
+            <div class="form-group text-right">
+                <button type="submit" role="button" class="btn btn-danger">
+                    Adicionar
+                </button>
+            </div>
+        </form>
+
+        <div id="botao" class="botao_flutuante botao_animacao">
+            <i class="uil uil-plus-circle"></i>
+        </div>
+        
 
         <!-- Rodapé -->
         <footer>

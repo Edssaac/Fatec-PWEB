@@ -11,6 +11,7 @@ body {
 }
 
 h1 {
+    line-height: 50px;
     font-size: 2em;
     margin-bottom: 20px;
     text-decoration: underline;
@@ -31,4 +32,71 @@ header {
 
 article {
     margin-bottom: 100px;
+}
+
+
+.botao_flutuante {
+    background-color: crimson;
+    border-radius: 50%;
+    
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    color: white;
+
+    cursor: pointer;
+
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+
+    animation-duration: 1s;
+}
+
+.botao_animacao:hover {
+    animation-name: botao;
+    animation-timing-function: ease;
+}
+
+@keyframes botao {
+    0%      { transform: translateY(0); }
+    50%     { transform: translateY(-15px); }
+    100%    { transform: translateY(0); }
+}
+
+
+.ocultar {
+    display: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 3px solid crimson;
+}
+
+
+/* fundo da barra */
+::-webkit-scrollbar 
+{
+    width: 0.80rem;
+    background-color: grey;
+    border-radius: 0.5rem;
+}
+
+/* barra */
+::-webkit-scrollbar-thumb
+{
+    background-color: rgb(218, 53, 86);
+    border-radius: 0.5rem;
+}
+
+/* hover da barra */
+::-webkit-scrollbar-thumb:hover
+{
+    background-color: crimson;
 }
