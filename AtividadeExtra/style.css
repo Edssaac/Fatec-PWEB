@@ -1,0 +1,80 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.mudaCor {
+    width: 90vw;
+    height: 80vh;
+
+    background-color: grey;
+
+    text-align: center;
+}
+.mudaCor::after {
+    content: "CINZA";
+    font-size: 25px;
+}
+
+
+/* @media screen and (min-width: 420px) {
+    .mudaCor {
+        background-color: grey;
+    }
+} */
+
+@media screen and (min-width: 768px) {
+    .mudaCor {
+        background-color: orange;
+    }
+    .mudaCor::after {
+        content: "LARANJA";
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mudaCor {
+        background-color: magenta;
+    }
+    .mudaCor::after {
+        content: "MAGENTA";
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .mudaCor {
+        background-color: purple;
+    }
+    .mudaCor::after {
+        content: "ROXO";
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .mudaCor {
+        background-color: red;
+    }
+    .mudaCor::after {
+        content: "VERMELHO";
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .mudaCor {
+        background-color: yellow;
+    }
+    .mudaCor::after {
+        content: "AMARELO";
+        font-size: 25px;
+    }
+}
