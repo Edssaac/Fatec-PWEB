@@ -13,7 +13,7 @@ function buscarNoticias(pais = 'br', categoria = 'general') {
     fetch(url)
     .then(response => response.json())
     .then(news => {
-
+        console.log(news);
         if (news.status == 'ok') {
             let noticias = news.articles.length;
             let bloco = '';
