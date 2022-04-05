@@ -1,0 +1,73 @@
+img {
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+}
+
+#jornal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artigo {
+    margin: 50px 10px 0px 10px;
+    padding: 4px 10px 4px 10px;
+
+    border: 2px solid black;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    flex: 0 0 30.333333%;
+    max-width: 30.333333%;
+}
+
+h2 {
+    font-size: 23px;
+}
+
+p {
+    text-align: justify;
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .artigo {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width:790px) {
+
+    .artigo {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+footer div {
+
+    background-color: #dc3545;
+    padding: 10px 5px 0 10px;
+    margin: 50px 0 0 0;
+    height: 100px;
+
+    border-radius: 4px 4px 0 0;
+}
