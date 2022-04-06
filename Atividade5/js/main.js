@@ -1,72 +1,56 @@
 
-var apiKey = 'a905ed8c823c41f4baa20313caf86685';
-var endpoint = 'https://newsapi.org/v2/top-headlines?';
+var apiKey = 'aenRHZrxNHd6tVSbamrLOj8A4cqyeWyTGsst2hcA';
+var endpoint = 'https://api.thenewsapi.com/v1/news/top?';
 
 
 // consumir a api:
+// docs: https://www.thenewsapi.com/documentation#top-stories
 function buscarNoticias(pais = 'br', categoria = 'general') {
 
-    let url = `${endpoint}country=${pais}&category=${categoria}&apiKey=${apiKey}`;
-
+    let url = `${endpoint}api_token=${apiKey}&locale=${pais}&category=${categoria}`;
+    
     let blocos = "";
 
     fetch(url)
     .then(response => response.json())
     .then(news => {
-        console.log(news);
-        if (news.status == 'ok') {
-            let noticias = news.articles.length;
+
+        // console.log(news);
+        
+        let noticias = news.meta.returned;
+        
+        if ( noticias > 0) {
             let bloco = '';
             
-            // noticias = 0;
-            if (noticias == 0) {
-                blocos = 
-                `
-                <div class="alert alert-warning mt-5 col-md-12" role="alert">
-                    Atenção, nenhuma notícia encontrada.
-                </div>
-                `;
-            }
-
             for (let noticia = 0; noticia < noticias; noticia++) {
                 bloco = "<div class='artigo'>";
 
                 // título?
-                if (news.articles[noticia].title) {
-                    bloco += `<h2>${news.articles[noticia].title}</h2><hr>`;
+                if (news.data[noticia].title) {
+                    bloco += `<h2 class="artigo-titulo">${news.data[noticia].title}</h2><hr>`;
                 }
-
+                
                 // tem descrição?
-                if (news.articles[noticia].description) {
-                    bloco += `<p>${news.articles[noticia].description}</p>`;
+                if (news.data[noticia].description) {
+                    bloco += `<p class="artigo-descricao">${news.data[noticia].description}</p>`;
                 }
-
+                
                 // tem imagem?
-                if (news.articles[noticia].urlToImage) {
+                if (news.data[noticia].image_url) {
                     bloco +=
                     `
                     <figure class="text-center">
-                        <img    src="${news.articles[noticia].urlToImage}" 
-                                alt="${news.articles[noticia].source.name}" 
-                                title="${news.articles[noticia].title}">
+                        <img    src="${news.data[noticia].image_url}" 
+                                alt="${news.data[noticia].title}" 
+                                title="${news.data[noticia].title}">
                     </figure>
                     `;
                 }
 
-                // conteudo?
-                if (news.articles[noticia].content) {
-                    bloco +=
-                    `
-                    <p>
-                        ${news.articles[noticia].content.replace(/\[.*?\]/g, "")}
-                    </p>
-                    `;
-                }
-
                 // data de publicação?
-                if (news.articles[noticia].publishedAt) {
+                if (news.data[noticia].published_at) {
 
-                    let data = new Date(news.articles[noticia].publishedAt);
+                    let data = new Date(news.data[noticia].published_at);
 
                     bloco +=
                     `
@@ -77,11 +61,11 @@ function buscarNoticias(pais = 'br', categoria = 'general') {
                 }
 
                 // fonte
-                if (news.articles[noticia].url) {
+                if (news.data[noticia].url) {
                     bloco +=
                     `
                     <p>
-                        Fonte: <a href="${news.articles[noticia].url}" target="_blank"><b>${news.articles[noticia].source.name}</b></a>
+                        Notícia Completa: <a href="${news.data[noticia].url}" target="_blank"><b>${news.data[noticia].source}</b></a>
                     </p>
                     `;
                 }
@@ -92,8 +76,17 @@ function buscarNoticias(pais = 'br', categoria = 'general') {
             } // for
 
             // blocos += bloco;
-            jornal.innerHTML = blocos;
         }
+        else {
+            blocos = 
+            `
+            <div class="alert alert-warning mt-5 col-md-12" role="alert">
+                Atenção, nenhuma notícia encontrada.
+            </div>
+            `;
+        }
+
+        jornal.innerHTML = blocos;
 
     })
 
