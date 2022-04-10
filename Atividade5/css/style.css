@@ -28,7 +28,7 @@ article {
     margin: 50px 10px 0px 10px;
     padding: 4px 10px 4px 10px;
 
-    border: 2px solid black;
+    border: 3px solid #dc3545;
     border-radius: 5px;
 
     display: flex;
@@ -38,13 +38,16 @@ article {
     position: relative;
     flex: 0 0 30.333333%;
     max-width: 30.333333%;
+
+    background-color: whitesmoke;
+    color: black;
 }
 
 h2 {
-    font-size: 23px;
+    font-size: 20px;
 }
 
-.artigo-descricao {
+.artigo-titulo, .artigo-descricao {
     text-align: justify;
 }
 

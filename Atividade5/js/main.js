@@ -27,7 +27,7 @@ function buscarNoticias(pais = 'br', categoria = 'general') {
 
                 // título?
                 if (news.data[noticia].title) {
-                    bloco += `<h2 class="artigo-titulo">${news.data[noticia].title}</h2><hr>`;
+                    bloco += `<h2 class="artigo-titulo mt-3">${news.data[noticia].title}</h2><hr>`;
                 }
                 
                 // tem descrição?
@@ -55,7 +55,7 @@ function buscarNoticias(pais = 'br', categoria = 'general') {
                     bloco +=
                     `
                     <p>
-                        Data de Publicação: <b>${data.toLocaleString()}</b>
+                        Data de Publicação:<br><b>${data.toLocaleString()}</b>
                     </p>
                     `;
                 }
