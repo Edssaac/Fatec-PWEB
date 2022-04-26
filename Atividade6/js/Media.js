@@ -4,10 +4,7 @@ const btnN2 = document.getElementById('btnN2');
 const btnN3 = document.getElementById('btnN3');
 const btnMedia = document.getElementById('btnMedia');
 
-var nome;
-var n1;
-var n2;
-var n3;
+var nome, n1, n2, n3;
 
 
 alert("Inserção de Notas e Cálculo de Média");

@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1 {
+    padding-bottom: 10px;
+    border-bottom: 10px solid #28a745;
+    border-radius: 0.25rem;
+}
+

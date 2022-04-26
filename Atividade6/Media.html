@@ -4,40 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Media.css">
     <script src="js/Media.js" defer></script>
 
     <title>Média</title>
 </head>
 <body>
 
-    <section>
+    <section class="container my-4">
+
+        <header>
+            <h1 class="mb-5 underline">Registro de Notas do Aluno</h1>
+        </header>
 
         <form>
-            <fieldset>
-                <label for="nomeAluno">Nome do Aluno</label>
-                <input type="text" id="nomeAluno" disabled>
-                <button type="button" id="btnNome">Adicionar</button>
-            </fieldset>
+            <div class="form-group row align-items-end">
+                <div class="col-lg-10 py-2">
+                    <label for="nomeAluno">Nome do Aluno</label>
+                    <input type="text" id="nomeAluno" disabled class="form-control">
+                </div>
 
-            <fieldset>
-                <label for="n1">Nota #1</label>
-                <input type="text" id="n1" disabled>
-                <button type="button" id="btnN1">Adicionar</button>
-            </fieldset>
+                <div class="col-lg-2 py-2 text-right">
+                    <button type="button" id="btnNome" class="btn btn-primary btn-block">Adicionar</button>
+                </div>
+            </div>
 
-            <fieldset>
-                <label for="n2">Nota #2</label>
-                <input type="text" id="n2" disabled>
-                <button type="button" id="btnN2">Adicionar</button>
-            </fieldset>
-            
-            <fieldset>
-                <label for="n3">Nota #3</label>
-                <input type="text" id="n3" disabled>
-                <button type="button" id="btnN3">Adicionar</button>
-            </fieldset>
+            <div class="form-group row align-items-end">
+                <div class="col-lg-10 py-2">
+                    <label for="n1">Nota #1</label>
+                    <input type="text" id="n1" disabled class="form-control">
+                </div>
 
-            <button type="button" id="btnMedia">Calcular Média</button>
+                <div class="col-lg-2 py-2 text-right">
+                    <button type="button" id="btnN1" class="btn btn-primary btn-block">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="form-group row align-items-end">
+                <div class="col-lg-10 py-2">
+                    <label for="n2">Nota #2</label>
+                    <input type="text" id="n2" disabled class="form-control">
+                </div>
+
+                <div class="col-lg-2 py-2 text-right">
+                    <button type="button" id="btnN2" class="btn btn-primary btn-block">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="form-group row align-items-end">
+                <div class="col-lg-10 py-2">
+                    <label for="n3">Nota #3</label>
+                    <input type="text" id="n3" disabled class="form-control">
+                </div>
+
+                <div class="col-lg-2 py-2 text-right">
+                    <button type="button" id="btnN3" class="btn btn-primary btn-block">Adicionar</button>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="btnMedia" class="btn btn-success btn-block">Calcular Média</button>
+            </div>
         </form>
 
     </section>
