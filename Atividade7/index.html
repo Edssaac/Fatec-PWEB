@@ -15,39 +15,49 @@
 </head>
 <body>
     
-    <section id="tabuleiro">
+    <section>
 
-        <div class="cartas" id="jogador_a">
-            <div class="carta" aria-valuetext="1" onclick="partida(this)">
-                <i class="fa-solid fa-hand"></i>
-            </div>
-            <div class="carta" aria-valuetext="2" onclick="partida(this)">
-                <i class="fa-solid fa-hand-back-fist"></i>
-            </div>
-            <div class="carta" aria-valuetext="3" onclick="partida(this)">
-                <i class="fa-solid fa-hand-scissors"></i>
-            </div>
-        </div>
+        <header>
+           <h1>Pedra Papel Tesoura</h1>
+           <div>
+               <p>Jogador: <span id="placar_jogador">0</span></p>
+               <p>Máquina: <span id="placar_maquina">0</span></p>
+           </div>
+        </header>
 
-        <div class="cartas" id="jogador_b">
-            <div class="carta">
-                <i class="fa-solid fa-hand"></i>
+        <main id="tabuleiro">
+            <div class="cartas" id="jogador_a">
+                <div class="carta" aria-valuetext="1" onclick="monitoraPartida(this)">
+                    <i class="fa-solid fa-hand"></i>
+                </div>
+                <div class="carta" aria-valuetext="2" onclick="monitoraPartida(this)">
+                    <i class="fa-solid fa-hand-back-fist"></i>
+                </div>
+                <div class="carta" aria-valuetext="3" onclick="monitoraPartida(this)">
+                    <i class="fa-solid fa-hand-scissors"></i>
+                </div>
             </div>
-            <div class="carta">
-                <i class="fa-solid fa-hand-back-fist"></i>
+    
+            <div class="cartas" id="jogador_b">
+                <div class="carta">
+                    <i class="fa-solid fa-hand"></i>
+                </div>
+                <div class="carta">
+                    <i class="fa-solid fa-hand-back-fist"></i>
+                </div>
+                <div class="carta">
+                    <i class="fa-solid fa-hand-scissors"></i>
+                </div>
             </div>
-            <div class="carta">
-                <i class="fa-solid fa-hand-scissors"></i>
-            </div>
-        </div>
+        </main>
+
+        <footer id="resultado">
+            <p>
+                Resultado: <span>-</span>
+            </p>
+        </footer>
 
     </section>
-
-    <div id="resultado">
-        <p>
-            Resultado: <span>-</span>
-        </p>
-    </div>
 
 </body>
 </html>

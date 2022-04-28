@@ -5,9 +5,7 @@
     font-family: sans-serif;
 }
 
-section {
-    height: 90vh;
-}
+
 
 #tabuleiro {
     display: flex;

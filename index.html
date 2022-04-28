@@ -4,63 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="css/style.css">
 
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/3a2851e723.js" crossorigin="anonymous"></script>
 
-    <style>
-        
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-            background-color: #333;
-            color: #eee;
-        }
+    <script src="js/script.js" defer></script>
 
-        section {
-            margin-left: 20px;
-        }
-
-        li {
-            padding-bottom: 15px;
-        }
-
-        a {
-            color: #eee;
-        }
-        
-        a + ul {
-            margin-top: 10px;
-        }
-
-    </style>
-
-    <title>Atividades</title>
+    <title>Atividade7</title>
 </head>
 <body>
-
+    
     <section>
-        <h1>Atividades - PWEB</h1>
 
-        <ol>
-            
-            <li>Atividade 1</li>
-            <li><a href="https://github.com/Edssaac/PWEB/tree/main/Atividade2" target="_blank">Atividade 2</a></li>
-            <li><a href="Atividade3/index.html" target="_blank">Atividade 3</a></li>
-            <li><a href="Atividade4/index.html" target="_blank">Atividade 4</a></li>
-            <li><a href="Atividade5/index.html" target="_blank">Atividade 5</a></li>
+        <header>
+           <h1>Pedra Papel Tesoura</h1>
+           <div>
+               <p>Jogador: <span id="placar_jogador">0</span></p>
+               <p>Máquina: <span id="placar_maquina">0</span></p>
+           </div>
+        </header>
 
-            <li>
-                <a href="https://github.com/Edssaac/PWEB/tree/main/Atividade6" target="_blank">Atividade 6</a>
-                <ul>
-                    <li><a href="Atividade6/Media.html" target="_blank">Média</a></li>
-                    <li><a href="Atividade6/Operacoes.html" target="_blank">Operações</a></li>
-                </ul>
-            </li>
+        <main id="tabuleiro">
+            <div class="cartas" id="jogador_a">
+                <div class="carta" aria-valuetext="1" onclick="monitoraPartida(this)">
+                    <i class="fa-solid fa-hand"></i>
+                </div>
+                <div class="carta" aria-valuetext="2" onclick="monitoraPartida(this)">
+                    <i class="fa-solid fa-hand-back-fist"></i>
+                </div>
+                <div class="carta" aria-valuetext="3" onclick="monitoraPartida(this)">
+                    <i class="fa-solid fa-hand-scissors"></i>
+                </div>
+            </div>
+    
+            <div class="cartas" id="jogador_b">
+                <div class="carta">
+                    <i class="fa-solid fa-hand"></i>
+                </div>
+                <div class="carta">
+                    <i class="fa-solid fa-hand-back-fist"></i>
+                </div>
+                <div class="carta">
+                    <i class="fa-solid fa-hand-scissors"></i>
+                </div>
+            </div>
+        </main>
 
-        </ol>
+        <footer id="resultado">
+            <p>
+                Resultado: <span>-</span>
+            </p>
+        </footer>
 
     </section>
-    
+
 </body>
 </html>
