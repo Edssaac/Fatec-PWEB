@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/3a2851e723.js" crossorigin="anonymous"></script>
+
+    <script src="js/script.js" defer></script>
+
+    <title>Atividade7</title>
+</head>
+<body>
+    
+    <section id="tabuleiro">
+
+        <div class="cartas" id="jogador_a">
+            <div class="carta" aria-valuetext="1" onclick="partida(this)">
+                <i class="fa-solid fa-hand"></i>
+            </div>
+            <div class="carta" aria-valuetext="2" onclick="partida(this)">
+                <i class="fa-solid fa-hand-back-fist"></i>
+            </div>
+            <div class="carta" aria-valuetext="3" onclick="partida(this)">
+                <i class="fa-solid fa-hand-scissors"></i>
+            </div>
+        </div>
+
+        <div class="cartas" id="jogador_b">
+            <div class="carta">
+                <i class="fa-solid fa-hand"></i>
+            </div>
+            <div class="carta">
+                <i class="fa-solid fa-hand-back-fist"></i>
+            </div>
+            <div class="carta">
+                <i class="fa-solid fa-hand-scissors"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="resultado">
+        <p>
+            Resultado: <span>-</span>
+        </p>
+    </div>
+
+</body>
+</html>

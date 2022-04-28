@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    height: 90vh;
+}
+
+#tabuleiro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartas {
+    padding: 0px 10%;
+}
+
+.carta {
+    padding: 20px 75px;
+    margin-bottom: 20px;
+
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.cartas:nth-child(1) i {
+    color: pink;
+}
+.cartas:nth-child(2) i {
+    color: green;
+}
+
+.cartas:nth-child(1) .carta:hover i {
+    transform: rotate(45deg);
+}
+.cartas:nth-child(2) .carta:hover i {
+    transform: rotate(-45deg);
+}
+
+.cartas:nth-child(1) .carta {
+    background-color: green;
+}
+.cartas:nth-child(2) .carta {
+    background-color: pink
+}
+
+i {
+   font-size: 150px; 
+   cursor: pointer;
+}
+
+.selected {
+    opacity: 0.6;
+}
+
+#resultado {
+    text-align: center;
+    height: 50px;
+}
+#resultado span {
+    font-weight: bold;
+}
