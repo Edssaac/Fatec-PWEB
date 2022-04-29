@@ -28,6 +28,10 @@ header {
     border-radius: 4px;
 }
 
+.bloco_header h1+div p {
+    padding: 4px 0px;
+}
+
 #resultado {
     text-align: center;
     height: 50px;
@@ -156,7 +160,8 @@ i {
         min-height: 300px;
     }
 
-    .cartas:nth-child(1)::before, .cartas:nth-child(2)::before {
+    .cartas:nth-child(1)::before,
+    .cartas:nth-child(2)::before {
         font-size: 15px;
     }
 
