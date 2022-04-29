@@ -5,21 +5,70 @@
     font-family: sans-serif;
 }
 
+body {
+    background-color: lightblue;
+}
 
+header {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 50px;
+}
+
+.bloco_header {
+    background-color: whitesmoke;
+
+    padding: 10px 25px;
+    margin: 25px 0;
+
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+#resultado {
+    text-align: center;
+    height: 50px;
+    width: 200px;
+}
+
+#resultado span {
+    font-weight: bold;
+}
 
 #tabuleiro {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    min-height: 500px;
+
+    gap: 15px;
+    margin-bottom: 25px;
 }
 
 .cartas {
-    padding: 0px 10%;
+    display: flex;
+    gap: 15px;
+}
+
+.cartas:nth-child(1)::before {
+    content: "Jogador:";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cartas:nth-child(2)::before {
+    content: "Máquina:";
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .carta {
     padding: 20px 75px;
-    margin-bottom: 20px;
 
     border: 2px solid black;
     border-radius: 4px;
@@ -28,37 +77,91 @@
 .cartas:nth-child(1) i {
     color: pink;
 }
+
 .cartas:nth-child(2) i {
     color: green;
 }
 
 .cartas:nth-child(1) .carta:hover i {
     transform: rotate(45deg);
-}
-.cartas:nth-child(2) .carta:hover i {
-    transform: rotate(-45deg);
+    cursor: pointer;
 }
 
 .cartas:nth-child(1) .carta {
     background-color: green;
 }
+
 .cartas:nth-child(2) .carta {
     background-color: pink
 }
 
 i {
-   font-size: 150px; 
-   cursor: pointer;
+    font-size: 150px;
 }
 
 .selected {
     opacity: 0.6;
 }
 
-#resultado {
-    text-align: center;
-    height: 50px;
+
+@media screen and (max-width: 1030px) {
+
+    #tabuleiro {
+        flex-direction: row;
+    }
+
+    .cartas {
+        flex-direction: column;
+    }
+
 }
-#resultado span {
-    font-weight: bold;
+
+@media screen and (max-width: 660px) {
+
+    .carta {
+        padding: 20px 75px;
+
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+
+    i {
+        font-size: 80px;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+
+    .carta {
+        padding: 20px 40px;
+
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+
+    i {
+        font-size: 60px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .bloco_header {
+        padding: 10px 10px;
+    }
+
+    #tabuleiro {
+        min-height: 300px;
+    }
+
+    .cartas:nth-child(1)::before, .cartas:nth-child(2)::before {
+        font-size: 15px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
 }
