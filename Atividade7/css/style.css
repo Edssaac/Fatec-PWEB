@@ -137,6 +137,14 @@ i {
 
 @media screen and (max-width: 530px) {
 
+    header {
+        gap: 0px;
+    }
+
+    .bloco_header {
+        margin: 10px 0 0;
+    }
+
     .carta {
         padding: 20px 40px;
 
