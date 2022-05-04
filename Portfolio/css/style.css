@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'cornerSky';
+    src: url("../assets/font/KGCorneroftheSky.ttf");
+}
+
+body {
+    font-family: 'cornerSky';
+}
+
+main,
+article {
+    min-height: 100vh;
+}
+
+footer {
+    min-height: 45vh;
+}
+
+#homemAranha img {
+    max-width: 150px;
+}
+
+#homemAranha img:hover {
+    transform: rotate(-5deg);
+}
+
+.quadrado {
+    border: 3px solid black;
+    height: 250px;
+}
+
+.conteudo {
+    padding: 10px;
+}
+
+#scrollTop {
+    border: 3px solid #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 15px;
+    right: 8px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+#scrollTop img {
+    width: 25px;
+    height: 25px;
+}
+
+#footer {
+    border-top: 3px solid #212529;
+}
+
+::-webkit-scrollbar {
+    width: 0.60rem;
+    background-color: #212529;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0d6efd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2d4c75;
+}
