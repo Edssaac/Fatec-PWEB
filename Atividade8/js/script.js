@@ -102,7 +102,7 @@ function atualizarForm() {
         }
     });
 
-    quantidadeOtimoBom.value = otimoBom;
+    quantidadeOtimoBom.value = `${((otimoBom / pessoas.length) * 100).toFixed(2)}%`;
     quantidadePessimo.value = pessimo;
 
     // Homens e Mulheres:
@@ -128,7 +128,7 @@ onload = () => {
     maiorIdade.value = 0;
     menorIdade.value = 0;
     quantidadePessimo.value = 0;
-    quantidadeOtimoBom.value = 0;
+    quantidadeOtimoBom.value = '0.00%';
     quantidadeHomemMulher.value = "Homens: 0 e Mulheres: 0";
 }
 
@@ -137,9 +137,10 @@ botao.addEventListener("click", () => {
 
     if (validarIdade()) {
 
+        // inserir os dados digitados pelo usuário:
         inserirDados();
 
-        // limpar dados.
+        // limpar dados:
         form.reset();
 
         // atualizar dados;
