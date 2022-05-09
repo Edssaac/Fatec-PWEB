@@ -9,7 +9,11 @@ btnMaior.addEventListener('click', () => {
 });
 
 btnOrdenar.addEventListener('click', () => {
-    ordenaNumeros(n1.value, n2.value, n3.value);
+    let ordenados = ordenaNumeros(n1.value, n2.value, n3.value);
+
+    n1.value = ordenados[0];
+    n2.value = ordenados[1];
+    n3.value = ordenados[2];
 });
 
 // Função responsável por ordenar os números em ordem crescente:
@@ -20,10 +24,6 @@ function ordenaNumeros(a, b, c) {
     ordenados.sort((x, y) => {
         return (x - y);
     });
-
-    n1.value = ordenados[0];
-    n2.value = ordenados[1];
-    n3.value = ordenados[2];
 
     return ordenados;
 }
