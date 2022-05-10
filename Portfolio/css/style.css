@@ -13,7 +13,7 @@ article {
 }
 
 footer {
-    min-height: 45vh;
+    min-height: 25vh;
 }
 
 #homemAranha img {
@@ -26,6 +26,7 @@ footer {
 
 .quadrado {
     border: 3px solid black;
+    border-radius: 4px;
     height: 250px;
 }
 
@@ -35,13 +36,14 @@ footer {
 
 #scrollTop {
     border: 3px solid #212529;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
     position: fixed;
-    bottom: 15px;
+    bottom: 50px;
     right: 8px;
     cursor: pointer;
     visibility: hidden;
@@ -56,6 +58,24 @@ footer {
     border-top: 3px solid #212529;
 }
 
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 5px;
+    width: 350px;
+}
+
+a {
+    text-decoration: none;
+}
+
 ::-webkit-scrollbar {
     width: 0.60rem;
     background-color: #212529;
@@ -67,4 +87,10 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #2d4c75;
+}
+
+@media screen and (max-width:1200px) {
+    li {
+        width: 250px;
+    }
 }
