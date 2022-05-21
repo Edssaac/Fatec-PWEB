@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="js/conta.js" defer></script>
+
+    <title>Conta</title>
+</head>
+
+<body class="bg-dark text-light">
+
+    <section class="container mt-5">
+
+        <h1 class="text-success mb-3">Conta</h1>
+
+        <div class="my-4">
+            <label for="tipo" class="form-label">Tipo de Conta:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="rTipo" id="rCorrente" value="0"
+                    onchange="atualizarTipo()" checked>
+                <label class="form-check-label" for="rCorrente">
+                    Corrente
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="rTipo" id="rPoupanca" value="1"
+                    onchange="atualizarTipo()">
+                <label class="form-check-label" for="rPoupanca">
+                    Poupança
+                </label>
+            </div>
+        </div>
+
+        <form class="row mb-3">
+
+            <div class="col-sm-12 col-md-6">
+                <label for="nomeCorrentista" class="form-label">Nome Correntista</label>
+                <input type="text" id="nomeCorrentista" name="nomeCorrentista" class="form-control mb-4">
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <label for="banco" class="form-label">Banco</label>
+                <input type="text" id="banco" name="banco" class="form-control mb-4">
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <label for="numeroConta" class="form-label">Número da Conta</label>
+                <input type="number" id="numeroConta" name="numeroConta" class="form-control mb-4">
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <label for="saldoConta" class="form-label">Saldo</label>
+                <input type="number" id="saldoConta" name="saldoConta" class="form-control mb-4">
+            </div>
+
+            <section id="corrente" class="row">
+                <div class="col-sm-12 col-md-6">
+                    <label for="saldoEspecial" class="form-label">Saldo Especial</label>
+                    <input type="number" id="saldoEspecial" name="saldoEspecial" class="form-control mb-4">
+                </div>
+            </section>
+
+            <section id="poupanca" class="row d-none">
+                <div class="col-sm-12 col-md-6">
+                    <label for="juros" class="form-label">Juros</label>
+                    <input type="number" id="juros" name="juros" class="form-control mb-4">
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <label for="dataVencimento" class="form-label">Data Vencimento</label>
+                    <input type="date" id="dataVencimento" name="dataVencimento" class="form-control mb-4">
+                </div>
+            </section>
+
+            <div>
+                <button type="button" id="btnSalvar" name="btnSalvar" class="btn btn-success">Salvar</button>
+            </div>
+
+        </form>
+    </section>
+
+</body>
+
+</html>
