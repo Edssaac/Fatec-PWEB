@@ -27,7 +27,12 @@ footer {
 .quadrado {
     border: 3px solid black;
     border-radius: 4px;
-    height: 250px;
+    min-height: 100vh;
+    margin-bottom: 30px;
+}
+
+h5 {
+    text-align: center;
 }
 
 .conteudo {
