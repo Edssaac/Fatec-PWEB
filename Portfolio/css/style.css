@@ -94,8 +94,39 @@ a {
     background-color: #2d4c75;
 }
 
-@media screen and (max-width:1200px) {
-    li {
-        width: 250px;
+@media screen and (max-width:500px) {
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        visibility: hidden;
     }
+}
+
+@media screen and (min-width:750px) {
+    li {
+        width: 25%;
+    }
+}
+
+.carousel-item div {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.carousel-item p {
+    text-align: justify;
+    padding: 5px 25px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1) grayscale(100);
 }
