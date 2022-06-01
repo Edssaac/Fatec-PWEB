@@ -60,6 +60,26 @@
                 </div>
             </section>
 
+            <!-- Modal Cursos -->
+            <div class="modal fade" id="modalCursos" tabindex="-1" aria-labelledby="modalCursosLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body text-center">
+                            <img src="" alt="certificado" id="certificado" class="img-fluid">
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Cursos -->
             <section id="cursos" class="pt-3">
                 <h5>Cursos</h5>
@@ -70,12 +90,14 @@
                             <div class="carousel-inner">
 
                                 <div class="carousel-item active">
-                                    <h6 class="text-center my-3">Teste</h6>
+                                    <h6 class="text-center my-3">Introdução ao PHP</h6>
                                     <div>
-                                        <img src="assets/img/teste.jpg" class="d-block" alt="assets/img/teste.jpg">
+                                        <img src="assets/img/cursos/introducao_php.png" class="d-block"
+                                            alt="certificado">
                                     </div>
                                     <p class="text-center">
-                                        Acesso: <a href="www.google.com" target="_blank">Ed</a>
+                                        <span id="0" class="certificado" data-bs-toggle="modal"
+                                            data-bs-target="#modalCursos">Certificado</span>
                                     </p>
                                     <p>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint vel dolorum
@@ -84,14 +106,14 @@
                                         perspiciatis quisquam!
                                     </p>
                                 </div>
-
                                 <div class="carousel-item">
-                                    <h6 class="text-center my-3">Teste</h6>
+                                    <h6 class="text-center my-3">Orientação a Objetos em PHP</h6>
                                     <div>
-                                        <img src="assets/img/teste.jpg" class="d-block" alt="assets/img/teste.jpg">
+                                        <img src="assets/img/cursos/poo_php.png" class="d-block" alt="certificado">
                                     </div>
                                     <p class="text-center">
-                                        Acesso: <a href="www.google.com" target="_blank">Ed</a>
+                                        <span id="1" class="certificado" data-bs-toggle="modal"
+                                            data-bs-target="#modalCursos">Certificado</span>
                                     </p>
                                     <p>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint vel dolorum
@@ -100,14 +122,79 @@
                                         perspiciatis quisquam!
                                     </p>
                                 </div>
-
                                 <div class="carousel-item">
-                                    <h6 class="text-center my-3">Teste</h6>
+                                    <h6 class="text-center my-3">Desenvolvimento avançado em PHP</h6>
                                     <div>
-                                        <img src="assets/img/teste.jpg" class="d-block" alt="assets/img/teste.jpg">
+                                        <img src="assets/img/cursos/avancado_php.png" class="d-block"
+                                            alt="assets/img/php.jpg">
                                     </div>
                                     <p class="text-center">
-                                        Acesso: <a href="www.google.com" target="_blank">Ed</a>
+                                        <span id="2" class="certificado" data-bs-toggle="modal"
+                                            data-bs-target="#modalCursos">Certificado</span>
+                                    </p>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint vel dolorum
+                                        blanditiis dolore hic optio numquam ratione accusantium adipisci sapiente.
+                                        Commodi expedita quod repudiandae totam, repellendus reprehenderit ipsum
+                                        perspiciatis quisquam!
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h6 class="text-center my-3">Introdução ao Git e ao GitHub</h6>
+                                    <div>
+                                        <img src="assets/img/cursos/git.png" class="d-block" alt="certificado">
+                                    </div>
+                                    <p class="text-center">
+                                        <span id="3" class="certificado" data-bs-toggle="modal"
+                                            data-bs-target="#modalCursos">Certificado</span>
+                                    </p>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint vel dolorum
+                                        blanditiis dolore hic optio numquam ratione accusantium adipisci sapiente.
+                                        Commodi expedita quod repudiandae totam, repellendus reprehenderit ipsum
+                                        perspiciatis quisquam!
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h6 class="text-center my-3">Projetos ágeis com SCRUM</h6>
+                                    <div>
+                                        <img src="assets/img/cursos/scrum.png" class="d-block" alt="certificado">
+                                    </div>
+                                    <p class="text-center">
+                                        <span id="4" class="certificado" data-bs-toggle="modal"
+                                            data-bs-target="#modalCursos">Certificado</span>
+                                    </p>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint vel dolorum
+                                        blanditiis dolore hic optio numquam ratione accusantium adipisci sapiente.
+                                        Commodi expedita quod repudiandae totam, repellendus reprehenderit ipsum
+                                        perspiciatis quisquam!
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h6 class="text-center my-3">Introdução ao Figma</h6>
+                                    <div>
+                                        <img src="assets/img/cursos/figma.png" class="d-block" alt="certificado">
+                                    </div>
+                                    <p class="text-center">
+                                        <span id="5" class="certificado" data-bs-toggle="modal"
+                                            data-bs-target="#modalCursos">Certificado</span>
+                                    </p>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint vel dolorum
+                                        blanditiis dolore hic optio numquam ratione accusantium adipisci sapiente.
+                                        Commodi expedita quod repudiandae totam, repellendus reprehenderit ipsum
+                                        perspiciatis quisquam!
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <h6 class="text-center my-3">Introdução ao Figma</h6>
+                                    <div>
+                                        <img src="assets/img/cursos/bootstrap.png" class="d-block" alt="certificado">
+                                    </div>
+                                    <p class="text-center">
+                                        <span id="6" class="certificado" data-bs-toggle="modal"
+                                            data-bs-target="#modalCursos">Certificado</span>
                                     </p>
                                     <p>
                                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint vel dolorum
@@ -144,31 +231,55 @@
 
                         <div class="row my-5 text-center">
                             <div class="col col-md-3 col-lg-3">
-                                <img src="assets/img/experiencias/bootstrap.png" alt="icone bootstrap">
+                                <img src="assets/img/experiencias/api.png" alt="icone api" title="API">
                             </div>
                             <div class="col col-md-3 col-lg-3">
-                                <img src="assets/img/experiencias/c.png" alt="icone c">
+                                <img src="assets/img/experiencias/bootstrap.png" alt="icone bootstrap"
+                                    title="Bootstrap">
                             </div>
                             <div class="col col-md-3 col-lg-3">
-                                <img src="assets/img/experiencias/cpp.png" alt="icone cpp">
+                                <img src="assets/img/experiencias/c.png" alt="icone c" title="C">
                             </div>
                             <div class="col col-md-3 col-lg-3">
-                                <img src="assets/img/experiencias/c-sharp.png" alt="icone c-sharp">
+                                <img src="assets/img/experiencias/cpp.png" alt="icone cpp" title="C++">
                             </div>
                             <div class="col col-md-3 col-lg-3">
-                                <img src="assets/img/experiencias/css.png" alt="icone css">
+                                <img src="assets/img/experiencias/c-sharp.png" alt="icone c-sharp" title="C#">
                             </div>
                             <div class="col col-md-3 col-lg-3">
-                                <img src="assets/img/experiencias/html.png" alt="icone html">
+                                <img src="assets/img/experiencias/css.png" alt="icone css" title="CSS">
                             </div>
                             <div class="col col-md-3 col-lg-3">
-                                <img src="assets/img/experiencias/javascript.png" alt="icone javascript">
+                                <img src="assets/img/experiencias/database.png" alt="icone database"
+                                    title="Banco de Dados">
                             </div>
                             <div class="col col-md-3 col-lg-3">
-                                <img src="assets/img/experiencias/php.png" alt="icone php">
+                                <img src="assets/img/experiencias/figma.png" alt="icone figma" title="Figma">
                             </div>
                             <div class="col col-md-3 col-lg-3">
-                                <img src="assets/img/experiencias/python.png" alt="icone python">
+                                <img src="assets/img/experiencias/git.png" alt="icone git" title="Git">
+                            </div>
+                            <div class="col col-md-3 col-lg-3">
+                                <img src="assets/img/experiencias/html.png" alt="icone html" title="HTML">
+                            </div>
+                            <div class="col col-md-3 col-lg-3">
+                                <img src="assets/img/experiencias/javascript.png" alt="icone javascript"
+                                    title="JavaScript">
+                            </div>
+                            <div class="col col-md-3 col-lg-3">
+                                <img src="assets/img/experiencias/nodejs.png" alt="icone nodejs" title="NodeJS">
+                            </div>
+                            <div class="col col-md-3 col-lg-3">
+                                <img src="assets/img/experiencias/php.png" alt="icone php" title="PHP">
+                            </div>
+                            <div class="col col-md-3 col-lg-3">
+                                <img src="assets/img/experiencias/python.png" alt="icone python" title="Python">
+                            </div>
+                            <div class="col col-md-3 col-lg-3">
+                                <img src="assets/img/experiencias/react.png" alt="icone react" title="React">
+                            </div>
+                            <div class="col col-md-3 col-lg-3">
+                                <img src="assets/img/experiencias/scrum.png" alt="icone scrum" title="SCRUM">
                             </div>
                         </div>
 
@@ -188,7 +299,7 @@
                                 <div class="carousel-item active">
                                     <h6 class="text-center my-3">Teste</h6>
                                     <div>
-                                        <img src="assets/img/teste.jpg" class="d-block" alt="assets/img/teste.jpg">
+                                        <img src="assets/img/teste.jpg" class="d-block" alt="projeto">
                                     </div>
                                     <p class="text-center">
                                         Acesso: <a href="www.google.com" target="_blank">Ed</a>
@@ -204,7 +315,7 @@
                                 <div class="carousel-item">
                                     <h6 class="text-center my-3">Teste</h6>
                                     <div>
-                                        <img src="assets/img/teste.jpg" class="d-block" alt="assets/img/teste.jpg">
+                                        <img src="assets/img/teste.jpg" class="d-block" alt="projeto">
                                     </div>
                                     <p class="text-center">
                                         Acesso: <a href="www.google.com" target="_blank">Ed</a>
@@ -220,7 +331,7 @@
                                 <div class="carousel-item">
                                     <h6 class="text-center my-3">Teste</h6>
                                     <div>
-                                        <img src="assets/img/teste.jpg" class="d-block" alt="assets/img/teste.jpg">
+                                        <img src="assets/img/teste.jpg" class="d-block" alt="projeto">
                                     </div>
                                     <p class="text-center">
                                         Acesso: <a href="www.google.com" target="_blank">Ed</a>

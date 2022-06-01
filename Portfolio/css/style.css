@@ -96,9 +96,9 @@ a {
 
 @media screen and (max-width:500px) {
 
-    .carousel-control-prev,
-    .carousel-control-next {
-        top: -60% !important;
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        visibility: hidden;
     }
 }
 
@@ -145,3 +145,9 @@ a {
 body {
     background-image: url("/assets/img/utils/web.png");
 }
+
+.certificado {
+    color: #0a58ca;
+    cursor: pointer;
+}
+
