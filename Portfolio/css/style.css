@@ -146,8 +146,11 @@ body {
     background-image: url("/assets/img/utils/web.png");
 }
 
-.certificado {
+.spanCertificado {
     color: #0a58ca;
     cursor: pointer;
 }
 
+#certificado {
+    max-height: 70vh;
+}

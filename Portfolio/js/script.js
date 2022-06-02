@@ -18,7 +18,7 @@ function scrollTop() {
 window.addEventListener('scroll', scrollTop);
 
 
-linksCertificado = document.getElementsByClassName("certificado");
+linksCertificado = document.getElementsByClassName("spanCertificado");
 certificado = document.getElementById("certificado");
 
 
@@ -30,11 +30,11 @@ Array.from(linksCertificado).forEach(link => {
 
 
 certificados = {
-    0: 'assets/img/cursos/introducao_php.png',
-    1: 'assets/img/cursos/poo_php.png',
-    2: 'assets/img/cursos/avancado_php.png',
-    3: 'assets/img/cursos/git.png',
-    4: 'assets/img/cursos/scrum.png',
-    5: 'assets/img/cursos/figma.png',
-    6: 'assets/img/cursos/bootstrap.png'
+    0: 'assets/img/certificados/introducao_php.jpg',
+    1: 'assets/img/certificados/poo_php.jpg',
+    2: 'assets/img/certificados/avancado_php.jpg',
+    3: 'assets/img/certificados/git.jpg',
+    4: 'assets/img/certificados/scrum.jpg',
+    5: 'assets/img/certificados/figma.jpg',
+    6: 'assets/img/certificados/bootstrap.jpg'
 }
