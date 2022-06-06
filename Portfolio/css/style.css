@@ -28,7 +28,7 @@ footer {
 .quadrado {
     border: 3px solid black;
     border-radius: 4px;
-    min-height: 100vh;
+    min-height: 75vh;
     margin-bottom: 30px;
 }
 
