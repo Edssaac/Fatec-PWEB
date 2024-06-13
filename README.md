@@ -1,7 +1,6 @@
 # Programação WEB
-### Professora: Denilce de Almeida Oliveira Veloso
-#### 4° Semeste - 2022
+Repositório para as atividades de PWEB. </br>
+Faculdade de Tecnologia de Sorocaba - Fatec SO. </br>
+Professora: Denilce de Almeida Oliveira Veloso. </br>
 
-<hr>
 Atividades: https://edssaac.github.io/PWEB/
-<hr>
